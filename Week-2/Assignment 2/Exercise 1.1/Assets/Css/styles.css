@@ -1,0 +1,139 @@
+/* Poppins Font Imported */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,800;1,900&display=swap');
+
+:root{
+    --primary-color:#f4f5f5;
+    --secondary-color: #ffffff;
+}
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Layout Header Css Code Start */
+
+#layout-header>h1 {
+    text-align: center;
+    padding: 2% 0%;
+    position: sticky;
+    top:0%;
+    background-color: var(--primary-color);
+}
+
+.header-content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.left-header,
+.right-header {
+    flex-basis: 50%;
+    padding: 2%;
+}
+
+.left-header img {
+    padding: 9%;
+    width: 100%;
+}
+
+.right-header article {
+    margin-bottom: 1.5rem;
+}
+
+.right-header article h3 {
+    text-transform: uppercase;
+}
+
+/* Layout Header Css Code End */
+
+/* Layout Content Css Code Start */
+#layout-content {
+margin-bottom: 5%;
+}
+
+#layout-content .main-content {
+    width: 50%;
+    margin: 0% auto;
+    padding: 2%;
+    background-color:var(--primary-color);;
+    border-radius: 5px;
+}
+
+.main-content h1 {
+    text-align: center;
+}
+
+.main-content table {
+    width: 100%;
+}
+
+.main-content table select, .input {
+    width: 100%;
+}
+
+.main-content table .btn{
+    width: 100%;
+    background-color: var(--secondary-color);
+    border:1px solid black;
+    border-radius: 2px;
+}
+
+.main-content table .btn:hover{
+    background-color: #e3e3e3;
+    font-weight: 500;
+}
+
+.main-content label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+/* Layout Content Css Code End */
+
+/* Layout Footer Css Code End */
+#layout-footer p{
+    text-align: center;
+    padding: 1%;
+    position: fixed;
+    bottom: 0%;
+    background-color: var(--primary-color);;
+    width: 100%;
+}
+
+/* Layout Footer Css Code End */
+
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 320px) and (max-width: 767px) {
+
+    .left-header,
+    .right-header {
+        flex-basis: 100%;
+    }
+
+    #layout-content .main-content {
+        width: 90%;
+        margin-bottom: 13%;
+    }
+
+    .right-header article{
+        padding: 0% 3%;
+    }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px) {
+
+    #layout-content .main-content {
+        margin-bottom: 9%;
+        width: 60%;
+    }
+
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199px) {}
