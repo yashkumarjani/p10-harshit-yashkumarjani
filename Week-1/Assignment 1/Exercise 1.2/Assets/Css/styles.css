@@ -1,0 +1,238 @@
+/* Lato Font Imported */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+:root {
+    /*CSS variable*/
+    --sidebarBg: #f0f0f0;
+    --headerBg: #454545;
+    --footerBg: #43689b;
+    --whiteColor:#ffffff;
+    --blackColor:#000000;
+}
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+/* Layout Css Code Start */
+#layout-main {
+    display: grid;
+    grid-template-rows: auto 3fr auto;
+    grid-template-columns: minmax(3%, 3%);
+    grid-template-areas:
+        'sidebar header'
+        'sidebar content'
+        'footer footer';
+    height: 100vh;
+}
+
+/* Layout Css Code End */
+
+/* Layout Sidebar Css Code Start */
+.layout-sidebar {
+    background-color:var(--sidebar);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: auto;
+}
+
+/* Layout Sidebar Css Code End */
+
+/* Layout Header Css Code Start */
+.layout-header {
+    background-color: var(--headerBg);
+    padding: 3%;
+    display: flex;
+    flex-wrap: wrap;
+    color: var(--whiteColor);
+}
+
+.header-image {
+    width: 15%;
+}
+
+.header-content {
+    padding: 0% 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+}
+
+.header-text>h3 {
+    margin-bottom: 0.3rem;
+    font-size: 1.17em;
+}
+
+.header-text>label {
+    display: block;
+    font-size: x-small;
+}
+
+.header-footer>i {
+    font-size: x-small;
+    font-weight: bold;
+    margin-right: 1rem;
+}
+
+/* Layout Header Css Code End */
+
+/* Layout Content Css Code Start */
+.layout-content {
+    background-color: var(--whiteColor);
+    padding: 1%;
+}
+
+.layout-content>table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.layout-content>table tr td {
+    width: 25%;
+    padding: 0.5rem;
+}
+
+.layout-content>table tr:nth-child(even) {
+    background-color: #f0f0f0;
+}
+
+.layout-content .table-button {
+    padding: 0.1rem;
+    background-color: transparent;
+    color: #0000EE;
+    font-weight: bold;
+    border: 1px solid var(--blackColor);
+}
+
+/* Layout Content Css Code End */
+
+/* Layout Footer Css Code Start */
+.layout-footer {
+    background-color: var(--footerBg);
+    color: var(--whiteColor);
+    padding: 1%;
+    display: flex;
+}
+
+.footer-left-content {
+    flex-basis: 50%;
+    display: flex;
+}
+
+.footer-left-content>.footer-image {
+    width: 15%;
+}
+
+.footer-left-text {
+    padding: 2%;
+}
+
+.footer-left-text>label {
+    display: block;
+    font-size: small;
+}
+
+.footer-left-text>label:last-child {
+    margin-top: 1.05rem;
+}
+
+.footer-right-content {
+    flex-basis: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Layout Footer Css Code End */
+
+
+/* Media Query Code Start */
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 320px) and (max-width: 767px) {
+    #layout-main {
+        grid-template-columns: minmax(10%, 10%);
+    }
+
+    .header-text>h3 {
+        font-size: x-small;
+    }
+
+    .layout-content>table tr td {
+        width: 0%;
+        font-size: x-small;
+    }
+
+    .layout-content .table-button {
+        font-size: x-small;
+    }
+
+    .footer-left-content>.footer-image {
+        width: 30%;
+        height: 100%;
+    }
+
+    .footer-left-text>label {
+        font-size: x-small;
+    }
+
+    .footer-left-text>label:last-child {
+        margin-top: 0.5rem;
+    }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px) {
+    #layout-main {
+        grid-template-columns: minmax(6%, 6%);
+    }
+
+    .header-text>h3 {
+        font-size: smaller;
+    }
+
+    .layout-content>table tr td {
+        width: 12%;
+        font-size: smaller;
+    }
+
+    .layout-content .table-button {
+        font-size: smaller;
+    }
+
+    .footer-left-text>label {
+        font-size: smaller;
+    }
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199px) {
+    #layout-main {
+        grid-template-columns: minmax(4%, 4%);
+    }
+
+    .header-text>h3 {
+        font-size: medium;
+    }
+
+    .layout-content>table tr td {
+        width: 5%;
+        font-size: medium;
+    }
+
+    .layout-content .table-button {
+        font-size: medium;
+    }
+
+    .footer-left-text>label {
+        font-size: medium;
+    }
+}
+
+
+/* Media Query Code End */
