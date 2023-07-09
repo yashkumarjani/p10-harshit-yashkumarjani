@@ -1,0 +1,66 @@
+body {
+  background: rgb(12, 124, 251);
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+h1{
+  text-align: center;
+}
+
+.header {
+  margin-bottom: 1.5em;
+  font-size: 1em;
+  background: yellow;
+}
+
+.todoBox {
+  background: #ffffff;
+  border-radius: 15px;
+  padding: 20px 10px;
+  color: black;
+  border: 3px solid rgb(36, 110, 194);
+}
+
+.task-items {
+  border: 1px solid #cdbbbb;
+  border-radius: 5px;
+  padding: 0.2em;
+  margin: 0.5em 0;
+}
+
+button{
+  border-radius: 5px;
+  margin: 0px 5px;
+  padding: 3px 5px;
+  border: none;
+  cursor: pointer;
+  color: white;
+  float: right;
+}
+
+.green {
+  background: rgb(25 107 47);
+
+}
+
+.blue{
+  background: rgb(12, 124, 251);
+
+}
+
+.formUi {
+  margin: 1.2rem 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.formUi input {
+  padding: 0 0.5em;
+}
